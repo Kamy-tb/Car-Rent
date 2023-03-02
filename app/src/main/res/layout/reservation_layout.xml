@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reservation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/custom_listcard"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="code_qr" />
+
+    <TextView
+        android:id="@+id/datedebut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Voiture"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toTopOf="@+id/img"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <TextView
+        android:id="@+id/cout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Code PIN :"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toBottomOf="@+id/datedebut"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <TextView
+        android:id="@+id/reservation_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Date"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toTopOf="@+id/img" />
+
+    <TextView
+        android:id="@+id/datefin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="modele"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/datedebut"
+        app:layout_constraintTop_toBottomOf="@+id/datedebut" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="type"
+        android:textSize="11sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/datefin"
+        app:layout_constraintStart_toEndOf="@+id/datefin" />
+
+    <TextView
+        android:id="@+id/cout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="1234"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cout"
+        app:layout_constraintStart_toEndOf="@+id/cout" />
+
+    <ImageButton
+        android:id="@+id/smart"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/trans"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/datedebut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/datedebut"
+        app:srcCompat="@drawable/lock_car"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Nom"
+            app:layout_constraintBottom_toTopOf="@+id/nom"
+            app:layout_constraintStart_toStartOf="@+id/nom" />
+
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp"
+            android:autofillHints=""
+            android:background="@drawable/edit_text"
+            android:ems="10"
+            android:hint="nom"
+            android:required="true"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:text=""
+            android:textColorHint="#757575"
+            app:layout_constraintStart_toStartOf="@+id/birthday"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/textcardnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Carte de crédit"
+            app:layout_constraintBottom_toTopOf="@+id/cardnum"
+            app:layout_constraintStart_toStartOf="@+id/cardnum"
+            app:layout_constraintTop_toBottomOf="@+id/num" />
+
+
+        <EditText
+            android:id="@+id/cardnum"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:background="@drawable/edit_text"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Numéro carte"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:required="true"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/num"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Numéro de telephone"
+            app:layout_constraintBottom_toTopOf="@+id/num"
+            app:layout_constraintStart_toStartOf="@+id/num"
+            app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:autofillHints=""
+            android:required="true"
+            android:background="@drawable/edit_text"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Numéro de telephone"
+            android:inputType="phone"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nom"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-120dp"
+            android:contentDescription="text_signin"
+            android:text="Registration"
+            android:textColor="#4F4F4F"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <TextView
+            android:id="@+id/permis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:text="Veuiller inserer une capture de votre permis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.294"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardnum"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bleu"
+            android:contentDescription="Créer mon compte"
+            android:text="Créer mon compte"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appercupermis" />
+
+        <ImageButton
+            android:id="@+id/imagefromcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/permis"
+            app:srcCompat="@drawable/ic_baseline_camera_alt_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="310dp"
+            android:layout_height="334dp"
+            android:translationY="-60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/carclick" />
+
+        <ImageButton
+            android:id="@+id/imagefromgallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/permis"
+            app:srcCompat="@drawable/ic_baseline_photo_24"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/appercupermis"
+            android:layout_width="201dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:srcCompat="@drawable/pemis" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="ou"
+            app:layout_constraintEnd_toStartOf="@+id/imagefromcamera"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imagefromgallery"
+            app:layout_constraintTop_toTopOf="@+id/imagefromgallery" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/voituresFragment2"
+        android:icon="@drawable/ic_car_rental"
+        android:title="Voiture"
+        />
+    <item
+        android:id="@+id/reservationFragment2"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="Reservations"
+        />
+    <item
+        android:id="@+id/trajetsFragment2"
+        android:icon="@drawable/ic_route_24"
+        android:title="Trajet"
+        />
+    <item
+        android:id="@+id/profilFragment2"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profil"
+        />
+
+</menu>
